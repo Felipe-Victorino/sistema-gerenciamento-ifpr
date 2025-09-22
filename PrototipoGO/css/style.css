@@ -16,6 +16,11 @@ header {
   font-size: small;
 }
 
+.nav-item {
+  background-color: var(--bg-white);
+  border-radius: 5px;
+}
+
 /*Estilizando Botão*/
 .btn {
   background-color: rgba(217, 217, 217, 1);
