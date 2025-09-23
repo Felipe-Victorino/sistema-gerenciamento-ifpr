@@ -4,9 +4,9 @@ header {
 
 .avatar {
   width: 54px;
-  height: 54px;
+  height: 68px;
   object-fit: cover;
-  border: 3px solid #dee2e6;
+  border: none;
 }
 
 .btc {
