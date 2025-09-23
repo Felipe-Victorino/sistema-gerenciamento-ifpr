@@ -1,0 +1,31 @@
+header {
+  background-color: rgba(131, 131, 131, 1);
+}
+
+.avatar {
+  width: 54px;
+  height: 54px;
+  object-fit: cover;
+  border: 3px solid #dee2e6;
+}
+
+.btc {
+  background-color: rgba(175, 175, 175, 1);
+  width: 177px;
+  height: 24;
+  border: none;
+}
+.btc:hover,
+.btc:focus {
+  background-color: rgba(175, 175, 175, 1);
+  color: black; /* mantém o texto */
+}
+
+.box {
+  height: 276px;
+  width: 276px;
+}
+
+footer {
+  background-color: rgba(131, 131, 131, 1);
+}
