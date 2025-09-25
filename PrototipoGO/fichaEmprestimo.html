@@ -8,10 +8,11 @@
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="menu.js"></script>
     <link rel="stylesheet" href="css/style.css" />
     <title>Novo empréstimo</title>
   </head>
-  <body>
+  <body onload="createNavMenu()">
     <header class="text-white p-5 py-3">
       <h2>
         <a class="text-white text-decoration-none" href="index.html">
@@ -24,48 +25,7 @@
         <nav
           class="sidebar col-md-3 col-lg-3 border-end p-4 min-vh-100 d-flex flex-column"
         >
-          <div>
-            <button
-              class="btn w-100 text-start fw-bold p-2"
-              data-bs-toggle="collapse"
-              data-bs-target="#menuEmprestimos"
-            >
-              Empréstimos
-            </button>
-            <div class="collapse show" id="menuEmprestimos">
-              <ul class="nav flex-column ms-3">
-                <li class="nav-item">
-                  <a href="#" class="nav-link text-black">Catálogo de itens</a>
-                </li>
-                <li class="nav-item">
-                  <a href="fichaEmprestimo.html" class="nav-link text-black"
-                    >Novo empréstimo</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link text-black"
-                    >Verificar empréstimos</a
-                  >
-                </li>
-              </ul>
-            </div>
-
-            <button
-              class="btn w-100 text-start fw-bold p-2 mt-3"
-              data-bs-toggle="collapse"
-              data-bs-target="#menuAchados"
-            >
-              Achados e Perdidos
-            </button>
-            <div class="collapse" id="menuAchados">
-              <ul class="nav flex-column ms-3">
-                <li class="nav-item">
-                  <a href="#" class="nav-link text-black">Catálogo de itens</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
+          <div id="nav-buttons"></div>
         </nav>
 
         <!-- Conteúdo principal -->
