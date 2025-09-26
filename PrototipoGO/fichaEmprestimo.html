@@ -8,7 +8,7 @@
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="menu.js"></script>
+    <script src="navmenu.js"></script>
     <link rel="stylesheet" href="css/style.css" />
     <title>Novo empréstimo</title>
   </head>
@@ -32,19 +32,66 @@
         <main class="content col-md-9 ms-4 mt-3 col-lg-9 px-md-4">
           <h3>Formulário de requisição de empréstimo</h3>
           <br />
-          <div class="d-flex flex-column">
-            Nome completo:
-            <input id="nome-completo" />
-            <br />
-            RA:
-            <input type="text" />
-            <br />
-            Telefone/Celular de contato:
-            <input type="text" />
+          <div class="d-flex flex-row">
+            <div class="d-flex flex-column justify-content-end">
+              Nome completo: <br /><input id="form-info" /> RA: <br />
+              <input id="form-info" />
+
+              Telefone/Celular de contato: <br /><input id="form-info" />
+            </div>
           </div>
 
           <div class="warning-text">
             Campos marcados com um asterisco são obrigatórios
+          </div>
+
+          <button
+            type="button"
+            class="btn"
+            data-toggle="modal"
+            data-target="#exampleModal"
+          >
+            Launch demo modal
+          </button>
+
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Modal title
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">...</div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Save changes
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </main>
       </div>
