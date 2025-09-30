@@ -9,7 +9,7 @@ const textlines = [
 
 function createNavMenu() {
   let menu = document.querySelector("#nav-buttons");
-  console.log("Success");
+  console.log("Navigation: Success");
   menu.appendChild(createNavButton("#menuEmprestimos", "Empréstimos"));
   menu.appendChild(createNavCollapseSection(0));
   menu.appendChild(createNavButton("#menuAchados", "Achados e Perdidos"));
