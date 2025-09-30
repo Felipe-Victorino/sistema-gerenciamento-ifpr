@@ -7,7 +7,7 @@ const textlines = [
   [{ text: "Catálogo de itens", link: "#" }],
 ];
 
-function createNavMenu() {
+export function createNavMenu() {
   let menu = document.querySelector("#nav-buttons");
   console.log("Navigation: Success");
   menu.appendChild(createNavButton("#menuEmprestimos", "Empréstimos"));
@@ -44,7 +44,7 @@ function createNavCollapseSection(sectiontype) {
 }
 
 function createNavListLine(index) {
-  obj = textlines[0][index];
+  let obj = textlines[0][index];
   let li = document.createElement("li");
   li.classList.add("nav-item");
 
