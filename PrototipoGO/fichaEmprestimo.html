@@ -8,18 +8,31 @@
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="navmenu.js"></script>
+    <script src="js/navmenu.js"></script>
     <link rel="stylesheet" href="css/style.css" />
     <title>Novo empréstimo</title>
   </head>
   <body onload="createNavMenu()">
-    <header class="text-white p-5 py-3">
-      <h2>
-        <a class="text-white text-decoration-none" href="index.html">
-          Sistema de Gerenciamento de Empréstimos</a
+    <header class="p-5 py-3 d-flex sticky align-items-center">
+      <div class="av-frame d-flex align-items-center justify-content-center">
+        <img
+          src="img/Instituto_Federal_Marca_2015.svg.png"
+          alt="Avatar de teste"
+          class="avatar"
+        />
+      </div>
+
+      <h5 class="text-white ms-3">
+        <a href="index.html" class="link-underline-opacity-0 link-light"
+          >IFPR - EMPRÉSTIMOS<br />
+          E ACHADOS</a
         >
-      </h2>
+      </h5>
+      <div
+        class="d-flex w-50 ms-5 justify-content-between justify-content-center align-items-center"
+      ></div>
     </header>
+
     <div class="container-fluid p-0">
       <div class="row">
         <nav
@@ -53,6 +66,8 @@
           >
             Launch demo modal
           </button>
+          
+          <!-- MODAL -->
 
           <div
             class="modal fade"

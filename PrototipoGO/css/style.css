@@ -2,13 +2,47 @@
   --dark-green: darkgreen;
   --medium-green: seagreen;
   --pop-color: crimson;
+  --bg-grey: slategrey;
   --bg-white: azure;
 }
 
 header {
   background-color: var(--dark-green);
-  position: sticky;
-  font: bolder;
+}
+
+.avatar {
+  width: 34px;
+  height: 48px;
+  object-fit: cover;
+  border: none;
+}
+
+.av-frame {
+  background-color: var(--bg-white);
+  border-radius: 15%;
+  width: 55px;
+  height: 55px;
+}
+
+.btc {
+  background-color: var(--bg-white);
+  width: 177px;
+  height: 24;
+  border: none;
+}
+
+.btc:hover {
+  background-color: var(--bg-grey);
+  color: black; /* mantém o texto */
+}
+
+.box {
+  height: 276px;
+  width: 276px;
+}
+
+footer {
+  background-color: var(--dark-green);
 }
 
 .warning-text {
@@ -21,16 +55,6 @@ header {
   border-radius: 5px;
 }
 
-/*Estilizando Botão*/
-.btn {
-  background-color: rgba(217, 217, 217, 1);
-}
-.btn:hover,
-.btn:focus {
-  background-color: rgb(255, 255, 255); /* mantém a cor */
-  color: black; /* mantém o texto */
-}
-
 .sidebar {
   background-color: var(--medium-green);
   width: 280px;
@@ -39,4 +63,10 @@ header {
 
 .content {
   margin-left: 280px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .content {
+    width: 600px;
+  }
 }
