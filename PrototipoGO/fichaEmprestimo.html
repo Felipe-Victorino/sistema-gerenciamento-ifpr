@@ -9,6 +9,7 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="implementation.js" type="module"></script>
+
     <link rel="stylesheet" href="css/style.css" />
     <title>Novo empréstimo</title>
   </head>
@@ -29,57 +30,90 @@
           <br />
           <div class="d-flex flex-row">
             <div class="d-flex flex-column justify-content-end">
-              Nome completo: <br /><input id="form-info" /> RA: <br />
-              <input id="form-info" />
-
-              Telefone/Celular de contato: <br /><input id="form-info" />
+              <br />
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1"
+                  >Nome completo:
+                  <div class="warning-text">*</div></span
+                >
+                <input type="text" class="form-control" placeholder="Nome" />
+              </div>
+              <br />
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1"
+                  >RA do aluno:<div class="warning-text">*</div></span
+                >
+                <input type="text" class="form-control" placeholder="RA" />
+              </div>
+              <br />
+              <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect01"
+                  >Curso do usuário:
+                  <div class="warning-text">*</div>
+                </label>
+                <select class="form-select" id="inputGroupSelect01">
+                  <option selected>Escolha...</option>
+                  <option value="1">Engenharia de Software</option>
+                  <option value="2">Licenciatura em Química</option>
+                  <option value="3">Engenharia Elétrica</option>
+                </select>
+              </div>
+              <br />
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1"
+                  >Telefone/Celular:
+                  <div class="warning-text">*</div></span
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Telefone/Celular"
+                />
+              </div>
             </div>
+            <div></div>
           </div>
 
           <div class="warning-text">
             Campos marcados com um asterisco são obrigatórios
           </div>
 
+          <!-- Button trigger modal -->
           <button
             type="button"
-            class="btn"
-            data-toggle="modal"
-            data-target="#exampleModal"
+            class="btn btn-primary"
+            id="modal-button"
+            data-bs-toggle="modal"
+            data-bs-target="#modal"
           >
-            Launch demo modal
+            Confirmar Formulário
           </button>
 
-          <!-- MODAL -->
-
+          <!-- Modal -->
           <div
             class="modal fade"
-            id="exampleModal"
+            id="modal"
             tabindex="-1"
-            role="dialog"
-            aria-labelledby="exampleModalLabel"
+            aria-labelledby="modalLabel"
             aria-hidden="true"
           >
-            <div class="modal-dialog" role="document">
+            <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">
-                    Modal title
-                  </h5>
+                  <h5 class="modal-title" id="modalLabel">Modal title</h5>
                   <button
                     type="button"
-                    class="close"
-                    data-dismiss="modal"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
                     aria-label="Close"
-                  >
-                    <span aria-hidden="true">&times;</span>
-                  </button>
+                  ></button>
                 </div>
                 <div class="modal-body">...</div>
                 <div class="modal-footer">
                   <button
                     type="button"
                     class="btn btn-secondary"
-                    data-dismiss="modal"
+                    data-bs-dismiss="modal"
                   >
                     Close
                   </button>
@@ -90,8 +124,10 @@
               </div>
             </div>
           </div>
+          <!---->
         </main>
       </div>
     </div>
+    <script src="js/formModal.js"></script>
   </body>
 </html>

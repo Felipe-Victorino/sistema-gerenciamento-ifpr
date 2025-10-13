@@ -17,8 +17,8 @@ export function createNavMenu() {
 }
 
 function createNavButton(dataTarget, text) {
-  let button = document.createElement("button");
-  button.classList.add("btn", "w-100", "text-start", "fw-bold", "p-2");
+  let button = document.createElement("div");
+  button.classList.add("nav-item", "w-100", "text-start", "fw-bold", "p-2");
   // button.setAttribute("data-bs-toggle", "collapse");
   button.setAttribute("data-bs-target", dataTarget);
   button.innerHTML = text;
@@ -45,8 +45,8 @@ function createNavCollapseSection(sectiontype) {
 
 function createNavListLine(index) {
   let obj = textlines[0][index];
-  let li = document.createElement("li");
-  li.classList.add("nav-item");
+  let li = document.createElement("button");
+  li.classList.add("nav-item", "btn");
 
   let anchor = document.createElement("a");
   anchor.classList.add("nav-link", "text-black");
