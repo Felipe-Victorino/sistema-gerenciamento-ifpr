@@ -34,7 +34,7 @@
                         <button id="btn-buscar" type="button">Buscar</button>
                     </form>
                 </div >
-                <div class="card-conteiner" id="cardContainer"></div>
+                <div class="card-conteiner" ></div>
                 <div class="mb-2 rounded d-flex align-content-center justify-content-between">
                     <div>
                         <img class="p-2" src="https://picsum.photos/50/50" alt="">
@@ -48,9 +48,9 @@
                     <button class="btcAddEm text-white mt-2 w-75"><strong>Adicionar ao Emprestimo</strong></button>
                 </div>
 
-                <div class="mb-3 p-3 bg-secondary bg-opacity-25 rounded">
-                    <nav class="flex-column">
-                        <div class="bg-white" id="lista-itens"></div>
+                <div class="mb-3 w-75 bg-secondary bg-opacity-25 rounded text-center justify-content-center align-content-center">
+                    <nav class="d-flex align-content-center w-25 h-50">
+                        <div class="card-conteiner bg-white d-flex align-content-center justify-content-center" id="lista-itens"></div>
                     </nav>
                 </div>
             </main>
@@ -94,8 +94,9 @@
                             const card = document.createElement("div");
                             card.classList.add("card");
                             
-                            const cardContent = '<img  src="https://picsum.photos/100/100" alt="placeholder image"> <h2 class="mt-4">${item.nome}</h2> <button class="btcAddEm text-white mt-2"><strong>Adicionar ao Emprestimo</strong></button>' ;
-                             card.innerHTML = cardContent;
+                            const cardContent = `<img class="w-75 h-50"  src="https://picsum.photos/100/100" alt="placeholder image"> <h2 class="mt-4">${item.nome}</h2> <button class="btcAddEm text-white mt-2"><strong>Adicionar ao Emprestimo</strong></button>` ;
+                            
+                            card.innerHTML = cardContent;
                             lista.appendChild(card);
                         });
                 }
@@ -124,10 +125,9 @@
     
         .card-conteiner{
             display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
+            gap: 40px;
             padding: 20px;
-            justify-content: center;
+        
         }
 
         .card {
@@ -140,6 +140,9 @@
             flex: 1 1 300px; /* grow: 1, shrink: 1, basis: 300px */
             min-width: 250px; /* Evita que o card fique muito pequeno */
             transition: transform 0.3s;
+
+            align-items: center;
+        
         }
 
         .card img{
