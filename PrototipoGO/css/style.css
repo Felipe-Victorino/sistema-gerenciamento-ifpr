@@ -4,6 +4,7 @@
   --light-green: rgb(120, 207, 158);
   --pop-color: crimson;
   --bg-grey: slategrey;
+  --bg-light-grey: lightgrey;
   --bg-white: azure;
 }
 
@@ -75,8 +76,7 @@ footer {
   width: 50%;
 }
 
-@media only screen and (max-width: 1200px) {
-  .content {
-    width: 600px;
-  }
+.card{
+  background-color: var(--bg-light-grey);
+  border-radius: 20;
 }

@@ -25,25 +25,38 @@
         </nav>
 
         <!-- Conteúdo principal -->
-        <main class="content col-md-9 ms-4 mt-3 col-lg-9 px-md-4">
-          <h3>Formulário de requisição de empréstimo</h3>
-          <br />
+        <main
+          class="content col-md-9 ms-4 mt-3 col-lg-9 px-md-4 pt-3 card padd"
+        >
+          <h3><strong>Formulário de requisição de empréstimo</strong></h3>
+
           <div class="d-flex flex-row">
-            <div class="d-flex flex-column justify-content-end">
+            <form class="d-flex flex-column justify-content-end">
               <br />
               <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1"
                   >Nome completo:
                   <div class="warning-text">*</div></span
                 >
-                <input type="text" class="form-control" placeholder="Nome" />
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Nome"
+                  id="form-info"
+                />
               </div>
               <br />
               <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1"
-                  >RA do aluno:<div class="warning-text">*</div></span
+                  >RA do aluno:
+                  <div class="warning-text">*</div></span
                 >
-                <input type="text" class="form-control" placeholder="RA" />
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="RA"
+                  id="form-info"
+                />
               </div>
               <br />
               <div class="input-group mb-3">
@@ -51,7 +64,7 @@
                   >Curso do usuário:
                   <div class="warning-text">*</div>
                 </label>
-                <select class="form-select" id="inputGroupSelect01">
+                <select class="form-select" id="form-info">
                   <option selected>Escolha...</option>
                   <option value="1">Engenharia de Software</option>
                   <option value="2">Licenciatura em Química</option>
@@ -68,10 +81,10 @@
                   type="text"
                   class="form-control"
                   placeholder="Telefone/Celular"
+                  id="form-info"
                 />
               </div>
-            </div>
-            <div></div>
+            </form>
           </div>
 
           <div class="warning-text">
