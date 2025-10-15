@@ -1,8 +1,10 @@
 :root {
   --dark-green: darkgreen;
   --medium-green: seagreen;
+  --light-green: rgb(120, 207, 158);
   --pop-color: crimson;
   --bg-grey: slategrey;
+  --bg-light-grey: lightgrey;
   --bg-white: azure;
 }
 
@@ -22,6 +24,14 @@ header {
   border-radius: 15%;
   width: 55px;
   height: 55px;
+}
+
+.btn {
+  background-color: var(--medium-green);
+}
+
+.btn:hover {
+  background-color: var(--light-green);
 }
 
 .btc {
@@ -63,10 +73,10 @@ footer {
 
 .content {
   margin-left: 280px;
+  width: 50%;
 }
 
-@media only screen and (max-width: 1200px) {
-  .content {
-    width: 600px;
-  }
+.card{
+  background-color: var(--bg-light-grey);
+  border-radius: 20;
 }
