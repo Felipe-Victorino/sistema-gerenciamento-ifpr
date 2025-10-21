@@ -1,6 +1,6 @@
 const textlines = [
   [
-    { text: "Catálogo de itens", link: "#" },
+    { text: "Catálogo de itens", link: "catalogoItens.html" },
     { text: "Novo Empréstimo", link: "fichaEmprestimo.html" },
     { text: "Verificar Empréstimo", link: "#" },
   ],
@@ -35,7 +35,7 @@ function createNavCollapseSection(sectiontype) {
   ul.classList.add("nav", "flex-column", "ms-3", "gap-2");
 
   for (let index = 0; index < textlines[sectiontype].length; index++) {
-    ul.appendChild(createNavListLine(index));
+    ul.appendChild(createNavListLine(index, sectiontype));
   }
 
   collapse.appendChild(ul);
@@ -43,8 +43,8 @@ function createNavCollapseSection(sectiontype) {
   return collapse;
 }
 
-function createNavListLine(index) {
-  let obj = textlines[0][index];
+function createNavListLine(index, sectiontype) {
+  let obj = textlines[sectiontype][index];
   let li = document.createElement("button");
   li.classList.add("nav-item", "btn");
 

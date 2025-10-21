@@ -12,6 +12,10 @@ header {
   background-color: var(--dark-green);
 }
 
+.sticky{
+  position: sticky;
+}
+
 .avatar {
   width: 34px;
   height: 48px;

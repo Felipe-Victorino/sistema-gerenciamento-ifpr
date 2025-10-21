@@ -4,8 +4,9 @@ modalbtn.addEventListener("click", loadFormResults);
 
 function loadFormResults() {
   let formList = document.querySelectorAll("#form-info");
+  let infoList = document.querySelectorAll("#input-group-text");
 
-  let modalbody = document.querySelector(".modal-body");
+  let modalbody = document.querySelector(".modal-results");
   if (isListEmpty(formList) == true) {
     console.log("Lista vazia");
     return;
@@ -14,11 +15,15 @@ function loadFormResults() {
   let textvalues = "";
 
   for (let index = 0; index < formList.length; index++) {
-    let element = formList[index];
-    console.log(element.innerHTML);
+    let elementForm = formList[index];
+    let elementInfo = infoList[index];
+    console.log(elementInfo.innerHTML + elementForm.value);
+    textvalues =
+      textvalues + elementInfo.innerHTML + " " + elementForm.value + "<br>";
   }
+  console.log(textvalues);
 
-  console.log(formList);
+  modalbody.innerHTML = textvalues;
 }
 
 function isListEmpty(list) {
