@@ -49,7 +49,7 @@ function createNavListLine(index, sectiontype) {
   li.classList.add("nav-item", "btn");
 
   let anchor = document.createElement("a");
-  anchor.classList.add("nav-link", "text-black");
+  anchor.classList.add( "text-black");
   anchor.innerHTML = obj.text;
   anchor.setAttribute("href", obj.link);
 

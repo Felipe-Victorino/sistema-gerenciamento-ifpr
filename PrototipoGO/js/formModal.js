@@ -14,6 +14,12 @@ function loadFormResults() {
 
   let textvalues = "";
 
+  let selectStrings = [
+    "Engenharia de Software",
+    "Licenciatura em Química",
+    "Engenharia Elétrica",
+  ];
+
   for (let index = 0; index < formList.length; index++) {
     let elementForm = formList[index];
     let elementInfo = infoList[index];
