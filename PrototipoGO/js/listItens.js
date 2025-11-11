@@ -18,13 +18,15 @@
           )
           .forEach((item) => {
             const li = document.createElement("div");
-            li.className = "list-group-item w-100 d-flex justify-content-between align-content-buttun";
+            li.className = "list-group-item w-100 d-flex justify-content-between ";
 
             const nome = document.createElement('span');
             nome.textContent = item.nome;
+            nome.className = "conteudo"
 
             const estoque = document.createElement('span');
             estoque.textContent = item.qtde;
+            nome.className = "conteudo"
 
             const add = document.createElement("button");
             add.textContent = 'adicionar'
