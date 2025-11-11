@@ -1,7 +1,7 @@
  const itens = [
         { id: 1, nome: "calculadora", qtde: 4 },
         { id: 2, nome: "caneta", qtde: 4 },
-        { id: 2, nome: "lapis", qtde: 4 },
+        { id: 2, nome: "lapis", qtde: 3 },
         { id: 4, nome: "grampeador", qtde: 4 },
       ];
 
@@ -22,11 +22,11 @@
 
             const nome = document.createElement('span');
             nome.textContent = item.nome;
-            nome.className = "conteudo"
+            nome.className = "conteudo ms-1"
 
             const estoque = document.createElement('span');
             estoque.textContent = item.qtde;
-            nome.className = "conteudo"
+            nome.className = "conteudo align-content-center"
 
             const add = document.createElement("button");
             add.textContent = 'adicionar'
