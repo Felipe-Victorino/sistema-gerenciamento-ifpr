@@ -20,7 +20,7 @@
     <div class="container-fluid p-0">
       <div class="row">
         <nav
-          class="sidebar col-md-3 col-lg-3 border-end p-4 min-vh-100 d-flex flex-column "
+          class="sidebar col-md-3 col-lg-3 border-end p-4 min-vh-100 d-flex flex-column"
         >
           <div id="nav-buttons"></div>
         </nav>
@@ -46,12 +46,15 @@
             class="mb-2 rounded d-flex align-content-center justify-content-between"
           >
             <div>
-              <img class="p-2" src="https://picsum.photos/50/50" alt="" />
-              <img class="p-2" src="https://picsum.photos/50/50" alt="" />
+              <!--
+              <img class="p-2" src="img/Instituto_Federal_Marca_2015.svg.png" alt="" />
+              <img class="p-2" src="img/Instituto_Federal_Marca_2015.svg.png" alt="" />
+              -->
             </div>
-            <h3 class="align-content-center">Itens Selecionados(0)</h3>
-          </div>
-          <!---
+          
+              <h3 class="align-content-center">Itens Selecionados(0)</h3>
+            </div>
+            <!---
           <div
             class="mb-3 p-3 bg-secondary bg-opacity-25 rounded w-25 h-50 justify-content-center text-center"
           >
@@ -120,7 +123,7 @@
             const card = document.createElement("div");
             card.classList.add("card");
 
-            const cardContent = `<img class="w-75 h-50"  src="https://picsum.photos/100/100" alt="placeholder image"> <h2 class="mt-4">${item.nome}</h2> <button class="btcAddEm text-white mt-2"><strong>Adicionar ao Emprestimo</strong></button>`;
+            const cardContent = `<img class="w-75 h-50"  src="img/Instituto_Federal_Marca_2015.svg.png" alt="placeholder image"> <h2 class="mt-4">${item.nome}</h2> <button class="btcAddEm text-white mt-2"><strong>Adicionar ao Emprestimo</strong></button>`;
 
             card.innerHTML = cardContent;
             lista.appendChild(card);
