@@ -4,7 +4,9 @@ const textlines = [
     { text: "Novo Empréstimo", link: "fichaEmprestimo.html" },
     { text: "Verificar Empréstimo", link: "#" },
   ],
-  [{ text: "Catálogo de itens", link: "#" }],
+  [{ text: "Catálogo de itens", link: "#" },
+    { text: "Novo Item perdido", link: "fichaAchadoPerdido.html" }
+  ],
 ];
 
 export function createNavMenu() {
