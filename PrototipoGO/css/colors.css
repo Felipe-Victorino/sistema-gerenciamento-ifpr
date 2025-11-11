@@ -1,0 +1,17 @@
+:root {
+  --dark-green: darkgreen;
+  --medium-green: seagreen;
+  --light-green: rgb(120, 207, 158);
+  --pop-color: crimson;
+  --bg-grey: slategrey;
+  --bg-light-grey: lightgrey;
+  --bg-white: azure;
+}
+
+.green-text {
+  color: var(--medium-green);
+}
+
+.green-background {
+  background-color: var(--medium-green);
+}

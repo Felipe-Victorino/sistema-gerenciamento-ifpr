@@ -4,7 +4,10 @@ const textlines = [
     { text: "Novo Empréstimo", link: "fichaEmprestimo.html" },
     { text: "Verificar Empréstimo", link: "#" },
   ],
-  [{ text: "Catálogo de itens", link: "#" }],
+  [
+    { text: "Catálogo de itens", link: "#" },
+    { text: "Cadastrar item", link: "#" },
+  ],
 ];
 
 export function createNavMenu() {
@@ -49,7 +52,7 @@ function createNavListLine(index, sectiontype) {
   li.classList.add("nav-item", "btn");
 
   let anchor = document.createElement("a");
-  anchor.classList.add( "text-black");
+  anchor.classList.add("text-black");
   anchor.innerHTML = obj.text;
   anchor.setAttribute("href", obj.link);
 
