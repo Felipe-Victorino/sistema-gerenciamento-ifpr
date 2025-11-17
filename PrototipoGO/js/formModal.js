@@ -2,6 +2,12 @@ let modalbtn = document.querySelector("#modal-button");
 
 modalbtn.addEventListener("click", loadFormResults);
 
+let sendbtn = document.querySelector("#send-btn");
+
+sendbtn.addEventListener("click", () => {
+  window.location.reload(true);
+});
+
 function isNameEmpty() {
   let nameField = document.querySelector("#nome-info");
   if (nameField.value == "") {
@@ -54,7 +60,7 @@ function loadFormResults() {
   console.log(isCourseEmpty());
   console.log(isCelEmpty());
 
-  console.log(isNameEmpty() || isRaEmpty() || isCourseEmpty() || isCelEmpty())
+  console.log(isNameEmpty() || isRaEmpty() || isCourseEmpty() || isCelEmpty());
   if (isNameEmpty() || isRaEmpty() || isCourseEmpty() || isCelEmpty()) {
     modalbody.className = "warning-text h1";
     modalbody.innerHTML =
@@ -62,8 +68,8 @@ function loadFormResults() {
     let btns = document.querySelector("#send-btn");
     btns.hidden = "true";
 
-    let btnc =document.querySelector("#cancel-btn");
-    btnc.innerHTML = "Ok"
+    let btnc = document.querySelector("#cancel-btn");
+    btnc.innerHTML = "Ok";
   } else {
     for (let index = 0; index < formList.length; index++) {
       let elementForm = formList[index];
