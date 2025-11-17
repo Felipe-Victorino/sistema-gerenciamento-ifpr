@@ -8,12 +8,20 @@
   --bg-white: azure;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 header {
   background-color: var(--dark-green);
 }
 
-.sticky{
+.sticky {
   position: sticky;
+}
+
+a {
+  text-decoration: none;
 }
 
 .avatar {
@@ -77,10 +85,11 @@ footer {
 
 .content {
   margin-left: 280px;
-  width: 50%;
+  width: 60%;
+  height: fit-content;
 }
 
-.card{
+.card {
   background-color: var(--bg-light-grey);
   border-radius: 20;
 }

@@ -27,7 +27,7 @@
 
         <!-- Conteúdo principal -->
         <main
-          class="content col-6 ms-4 mt-3 col-lg-9 px-md-4 pt-3 card padd area-form-emprestimo"
+          class="content col-md-9 ms-4 mt-3 col-lg-9 px-md-4 pt-3 pb-3 card padd"
         >
           <h3><strong>Formulário de requisição de empréstimo</strong></h3>
 
@@ -41,9 +41,9 @@
                 >
                 <input
                   type="text"
-                  class="form-control"
+                  class="form-control form-info"
                   placeholder="Nome"
-                  id="form-info"
+                  id="nome-info"
                 />
               </div>
               <br />
@@ -54,9 +54,9 @@
                 >
                 <input
                   type="text"
-                  class="form-control"
+                  class="form-control form-info"
                   placeholder="RA"
-                  id="form-info"
+                  id="ra-info"
                 />
               </div>
               <br />
@@ -65,8 +65,8 @@
                   <div id="input-group-text">Curso do usuário:</div>
                   <div class="warning-text">*</div>
                 </label>
-                <select class="form-select" id="form-info">
-                  <option selected>Escolha...</option>
+                <select class="form-select form-info" id="curso-info">
+                  <option selected value="">Escolha...</option>
                   <option value="1">Engenharia de Software</option>
                   <option value="2">Licenciatura em Química</option>
                   <option value="3">Engenharia Elétrica</option>
@@ -81,9 +81,9 @@
                 >
                 <input
                   type="text"
-                  class="form-control"
+                  class="form-control form-info"
                   placeholder="Telefone/Celular"
-                  id="form-info"
+                  id="cel-info"
                 />
               </div>
             </form>
@@ -127,7 +127,6 @@
                 </div>
                 <div class="modal-body">
                   <div class="modal-results"></div>
-                  <div>Enviar dados?</div>
                 </div>
 
                 <div class="modal-footer">
@@ -135,10 +134,11 @@
                     type="button"
                     class="btn btn-secondary"
                     data-bs-dismiss="modal"
+                    id="cancel-btn"
                   >
                     Cancelar
                   </button>
-                  <button type="button" class="btn btn-primary">
+                  <button type="button" class="btn btn-primary" id="send-btn">
                     Enviar dados
                   </button>
                 </div>
