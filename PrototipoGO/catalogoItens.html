@@ -30,7 +30,7 @@
         <!-- Conteúdo principal -->
         <main class="content col-md-9 ms-4 mt-3 col-lg-9 px-md-4 ">
           <div
-            class="mb-3 p-3 bg-secondary bg-opacity-25 rounded d-flex justify-content-end align-content-center"
+            class="conteiner mb-3 p-3 bg-secondary bg-opacity-25 rounded d-flex justify-content-end align-content-center"
           >
             <h4 class="me-auto"><strong> Catálogo de Itens</strong></h4>
             <form class="d-flex" role="search" style="width: 250px">
@@ -52,10 +52,12 @@
               <img class="p-2" src="img/Instituto_Federal_Marca_2015.svg.png" alt="" />
               -->
             </div>
-          
-              <h3 class="align-content-center">Itens Selecionados(0)</h3>
+            <h3 class="align-content-center">Itens Selecionados(0)</h3>
+          </div>
+            <div class="list-group-header w-100 d-flex ">
+              <p class="conteudo">NOME</p>
+              <p class="conteudo">ESTOQUE</p>
             </div>
-  
             <nav class="d-flex align-content-center justify-content-center w-100 ">
               <div
                 class="w-100"
@@ -71,6 +73,7 @@
       main{
         width: 100%;
       }
+  
       .btcAddEm {
         background-color: green;
         width: 177px;
@@ -81,13 +84,25 @@
       .btcAddEm:hover {
         background-color: greenyellow;
         color: black;
-        /* mantém o texto */
       }
+
+      .conteudo{
+        width: 200px;
+      }
+
+      .list-group-header{
+        padding: 2%;
+        border-radius: 6px 6px 6px 6px !important;
+        background-color: grey;
+        align-items: baseline;
+        margin-left: none !important;
+      }
+
       .list-group-item{
         padding: 2%;
-        border-radius: 5px !important;
-        background-color: lightgrey;
-        margin: 2%;
+        border-radius: 6px 6px 6px 6px !important;
+        background-color: grey;
+        margin-top: 2%;
         align-items: baseline;
       }
       
